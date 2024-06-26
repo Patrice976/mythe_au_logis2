@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <title>Mythe au logis</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: 'Cinzel', serif;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin :auto
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour le relief */
+        z-index: 1000; /* Assurez-vous que le header est au-dessus des autres contenus */
+        padding: 10px 0; /* Ajouter un peu de padding pour l'apparence */
+        transition: height 0.3s, padding 0.3s; /* Transition pour la hauteur et le padding */
+        display: flex;
+        justify-content: center; /* Centrer le logo horizontalement */
+        align-items: center; /* Centrer le logo verticalement */
+    }
+
+    .section {
+        height: 100vh; /* Chaque section prend toute la hauteur de la fenêtre du navigateur */
+        display: flex; /* Utiliser flexbox pour centrer le contenu */
+        justify-content: center; /* Centrer horizontalement le contenu */
+        align-items: center; /* Centrer verticalement le contenu */
+    }
+
+    .container {
+        text-align: center; /* Centrer le texte à l'intérieur des conteneurs */
+    }
+
+    #logo {
+        max-width: 100%; /* Ajuster le logo à la taille du conteneur */
+        height: auto; /* Maintenir le ratio d'aspect du logo */
+        transition: width 0.3s; /* Transition pour la taille du logo */
+    }
+
+    .txt {
+        font-family: 'Cinzel', serif;
+        font-size: 1.5em;
+    }
+
+    .scrolldown_invitation {
+        font-family: 'Cinzel', serif;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    .boutonp3 {
+        background-color: #f0f0f0;
+        border: none;
+        padding: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        margin: 10px;
+        display: inline-block;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    }
+
+    .boutonp3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .boutonp3:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.10);
+    }
+
+    .shrink {
+        height: 60px; /* Hauteur réduite du header */
+        padding: 5px 0; /* Réduction du padding */
+        background-color: black;
+        z-index: 1000;
+    }
+
+    .shrink #logo {
+        width: 10%; /* Taille réduite du logo */
+    }
+  </style>
+</head>
+
+<body>
+    <div>
+  <header id="header">
+    <img src="ressource img/Logo ligne - blanc.png" id="logo">
+  </header>
+</div>
+
+  <!-- Page d'accueil -->
+  <section id="indexp1" class="section"> 
+    <div class="container"> 
+      <!-- Le logo a été déplacé dans l'élément header -->
+    </div>
+  </section>
+
+  <!-- page de présentation -->
+  <section id="indexp2" class="section"> 
+    <div class="container"> 
+      <span id="para1" class="txt">
+        Prêt à plonger dans des récits épiques et des aventures légendaires ?
+        <br><br><br><br> 
+      </span>
+      <span id="para2" class="txt">
+         Sur ce site, découvre des mythologies du monde entier.
+         <br><br><br><br>
+      </span>
+      <span id="para3" class="txt">
+        Que tu sois fan de dieux norique, de héros grec ou de créatures mystérieuses<br>,ici, il y a de quoi éveiller ton imagination !
+      </span>
+      <span class="scrolldown_invitation" class="txt"> 
+        Embarque pour un voyage incroyable 
+      </span>
+    </div>
+  </section>
+
+  <!-- page liste panthéon -->
+  <section id="indexp3" class="section"> 
+    <div class="container">
+      <button type="button" class="boutonp3" id="buttongreek"><img src="ressource img/grec.jpg" alt="grec"></button>
+      <button type="button" class="boutonp3" id="buttonnorse"><img src="ressource img/nordique.png" alt="nordique"></button> 
+      <button type="button" class="boutonp3" id="buttonegyptian"><img src="ressource img/égyptien.png" alt="égyptien"></button> 
+      <button type="button" class="boutonp3" id="buttonhindu"><img src="ressource img/hindu.png" alt="hindu"></button> 
+      <button type="button" class="boutonp3" id="buttonchinois"><img src="ressource img/chinois.png" alt="chinois"></button>
+      <button type="button" class="boutonp3" id="buttonjapan"><img src="ressource img/japonais.png" alt="japonais"></button> 
+      <button type="button" class="boutonp3" id="buttonarthurian"><img src="ressource img/arthurien.png" alt="arthurien"></button>
+      <button type="button" class="boutonp3" id="buttonmayan"><img src="ressource img/maya.png" alt="maya"></button>
+      <button type="button" class="boutonp3" id="buttonceltic"><img src="ressource img/celtique.png" alt="celtique"></button>    
+    </div>
+  </section>
+
+  <script>
+    window.addEventListener('scroll', function() {
+        const header = document.getElementById('header');
+        if (window.scrollY > 0) {
+            header.classList.add('shrink');
+        } else {
+            header.classList.remove('shrink');
+        }
+    });
+  </script>
+</body>
+</html>

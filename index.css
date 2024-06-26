@@ -1,3 +1,16 @@
+header {
+    position : fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index : 1000 ; /* fait en sorte que le header sois toujours au dessus des autres éléments */
+    transition : height 1s, padding 1s, background-color 2s; 
+    display : flex ; 
+    justify-content: center;
+    align-items : center ; 
+    margin : auto ;
+}
+
 .txt{
     color: beige;
     font-family: "Cinzel", serif;
@@ -11,9 +24,9 @@
 .container {
     height : 100vh; /* vh= viewport height 1vh = 1% de la hauteur de la fenêtre du navigateur ... 100vh permet d'occuper toute la hauteru de la fenêtre du navigateur */
     display: flex;
-    justify-content : center;
-    margin : auto ;
+    margin : auto ; 
 }
+
 
 body {
     background-color: rgb(1, 1, 49);
@@ -27,10 +40,9 @@ body {
     }
 
         #logo{
-            height : auto ; width: 100%;
-            margin : auto ; 
-           
-
+            width : 100%;
+            height : auto ; 
+            transition : width 1s; 
         }
     
 
@@ -63,9 +75,9 @@ body {
             overflow: hidden; /*empêche l'image de déborder du bouton*/
             width: 100px;
             height:100px;
-            margin:28px;
+            margin:10px;
             display: inline-block;
-            
+            transition : transform 0.5s, box-shadow 1s ;
         }
 
         .boutonp3 img {
@@ -76,10 +88,8 @@ body {
         }
         
         .boutonp3:hover {
-            box-shadow : 0 0 10px #fff;
-            width : 120px;
-            height: 120px;
-            
+            box-shadow : 0 0 20px #fff;
+            transform: scale(1.2);   
         }
        
 
@@ -110,6 +120,17 @@ body {
         }
         #buttonceltic {
 
+        }
+
+        .Reduce {
+            height : 60px;
+            padding : 10px 0;
+            background-color: black;
+        }
+        .Reduce #logo {
+            width: 10%;
+            height : auto 
+            
         }
     
 
