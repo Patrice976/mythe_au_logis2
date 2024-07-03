@@ -1,16 +1,3 @@
-header {
-    position : fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index : 1000 ; /* fait en sorte que le header sois toujours au dessus des autres éléments */
-    transition : height 1s, padding 1s, background-color 2s; 
-    display : flex ; 
-    justify-content: center;
-    align-items : center ; 
-    margin : auto ;
-}
-
 .txt{
     color: beige;
     font-family: "Cinzel", serif;
@@ -21,16 +8,48 @@ header {
 
 }
 
+header {
+    position : fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index : 1000 ; /* fait en sorte que le header sois toujours au dessus des autres éléments */
+    transition : height 2s, padding 2s, background-color 2s, box-shadow 2s ; 
+    display : inline-flex ; 
+    justify-content: center;
+    align-items : center ; 
+    margin : auto ;
+}
+
+header a { 
+    font-weight:bold ;
+    text-decoration: none;
+    color: beige;
+    margin:3%;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    align-items: center ;
+    font-size: 150%;
+    transition : transform 1s
+}
+
+header a:hover {
+    transform: scale(1.2);
+    transition-delay(text-shadow: #fff 1em 0.25em 1em):1s; 
+}
+
+
 .container {
     height : 100vh; /* vh= viewport height 1vh = 1% de la hauteur de la fenêtre du navigateur ... 100vh permet d'occuper toute la hauteru de la fenêtre du navigateur */
     display: flex;
-    margin : auto ; 
+   
 }
 
 
 body {
     background-color: rgb(1, 1, 49);
-    margin: 20px; 
+ 
 }
 
 
@@ -42,7 +61,9 @@ body {
         #logo{
             width : 100%;
             height : auto ; 
-            transition : width 1s; 
+            transition : width 1s, transform 2s ;  
+            padding : 7em 2em 0 0; 
+            
         }
     
 
@@ -62,76 +83,113 @@ body {
             align-self:flex-end;
 
         }
-        #scrolldown_invitation {
+        
+    
+    #indexp3{
+    margin : 0 ;
+    }
+
+        #boutonpantheon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height : 15vh;  
+            margin-top : 10% ; 
+            margin-left : 13%; /* forcer le centrage car le display le semble pas fonctionner */ 
+                
+
+                }
+                .boutonp3 {
+                    background-color: transparent;
+                    border-radius : 50%;
+                    overflow: hidden; /*empêche l'image de déborder du bouton*/
+                    width: 100px;
+                    height:100px;
+                    margin:10px;
+                    display: inline-block;
+                    transition : transform 0.5s, box-shadow 1s ;
+                    
+                }
+
+                .boutonp3 img {
+                    width: 100%;
+                    height : 100%;
+                    object-fit : cover; /* permet d'adapter l'image pour qu'elle fit avec le bouton */
+                    border-radius: 50% /* petit tips pour que l'image sois aussi ronde que le bouton */
+                }
+                
+                .boutonp3:hover {
+                    box-shadow : 0 0 20px #fff;
+                    transform: scale(1.2);   
+                }
+    
+    .display_pantheon { 
+       display : inline-block ; 
+       justify-content: flex-start;
+       margin-top : 23%;
+       
+    }
+        /* mise en page Menu Grec */
+
+        .logopantheon {
+            position : absolute ; 
+            right : 58%; 
+            bottom : 10%
+            width : auto ; 
+            height : 60% ;
 
         }
     
-    #indexp3{
-
-    }
-        .boutonp3 {
-            background-color: transparent;
-            border-radius : 50%;
-            overflow: hidden; /*empêche l'image de déborder du bouton*/
-            width: 100px;
-            height:100px;
-            margin:10px;
-            display: inline-block;
-            transition : transform 0.5s, box-shadow 1s ;
+        .display_txt {
+           position : absolute ; 
+           right :0.75% ; 
+           white-space: nowrap;
         }
 
-        .boutonp3 img {
-            width: 100%;
-            height : 100%;
-            object-fit : cover; /* permet d'adapter l'image pour qu'elle fit avec le bouton */
-            border-radius: 50% /* petit tips pour que l'image sois aussi ronde que le bouton */
+        #nextpagegrec { 
+            position : relative ; 
+            top : 70% ;
+            right : 200%;
+            height : 20% ;
+            width: 150% ;  
+            background-color: #A050CB;
+            color : white ; 
+            border-radius: 0.5em;
+            font-size: 1.5em;
+            transition : box-shadow 0.5s ; 
         }
-        
-        .boutonp3:hover {
-            box-shadow : 0 0 20px #fff;
-            transform: scale(1.2);   
+
+        #nextpagegrec:hover {
+            box-shadow: 0 0 15px #fff;
         }
+
        
 
-        #buttongreek {
 
-        }
-        
-        #buttonorse {
-
-        }
-        #buttonegyptian {
-
-        }
-        #buttonhindu {
-
-        }
-        #buttonchinois {
-
-        }
-        #buttonjapan {
-
-        }
-        #buttonarthurian {
-
-        }
-        #buttonmayan {
-
-        }
-        #buttonceltic {
-
-        }
-
+        /* condition qui se rajoute au header si scroll */
         .Reduce {
             height : 60px;
             padding : 10px 0;
-            background-color: black;
+            background: linear-gradient(142deg, rgba(2,0,36,1) 25%, rgba(32,32,95,1) 80%, rgba(152,165,168,1) 100%);
+            box-shadow: 0 0 25px #fff;
+            transition-delay : 1s;
+            transition-property: box-shadow ;
         }
+     
         .Reduce #logo {
-            width: 10%;
-            height : auto 
+            width: 8%;
+            height : auto ; 
+            padding : 5px 20px 5px; 
             
         }
-    
 
+        .Reduce #logo:hover {
+            transform: scale(1.2);
+            text-shadow: #fff 1em 0.25em 1em;
+        }
 
+        /* cache les éléments pour l'utilisation */ 
+
+        .hide {
+            display : none ; 
+        }

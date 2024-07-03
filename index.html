@@ -15,7 +15,13 @@
                                                     <!-- Page d'acceuil -->
   <div>
     <header id="header">
+      <a href="" id="header_accueil">Accueil</a>
+      <a href="indexp3" id="header_panthéon"> Panthéon </a>
       <img src="ressource img/Logo ligne - blanc.png" id="logo">
+      <a href="" id="header_contact">Contact</a>
+      <form class="recherche"> <!-- création d'une barre de recherche -->
+        <input type="text" name="text" class="search" placeholder="Recherchez votre info ici!">
+        <input type="submit" name="submit" class="submit" value="Rechercher!">
     </header>
   </div>
 
@@ -56,16 +62,39 @@
     <div id="indexp3" class="container">
 
       <!-- bouton a placer tout en haut de la page avec présentation et détail du pantheon sur un hoove -->
+      <div id="boutonpantheon">
+        <button type ="button" class="boutonp3" id="buttongreek" ><img src="ressource img\grec.jpg"></button>
+        <button type ="button" class="boutonp3" id="buttonnorse" ><img src="ressource img\nordique.png"></button> 
+        <button type ="button" class="boutonp3" id="buttonegyptian"><img src="ressource img\égyptien.png"></button> 
+        <button type ="button" class="boutonp3" id="buttonhindu" ><img src="ressource img\hindu.png"></button> 
+        <button type ="button" class="boutonp3" id="buttonchinois" ><img src="ressource img\chinois.png"></button>
+        <button type ="button" class="boutonp3" id="buttonjapan" ><img src="ressource img\japonais.png"></button> 
+        <button type ="button" class="boutonp3" id="buttonarthurian" ><img src="ressource img\arthurien.png"></button>
+        <button type ="button" class="boutonp3" id="buttonmayan" ><img src="ressource img\maya.png"></button>
+        <button type ="button" class="boutonp3" id="buttonceltic" ><img src="ressource img\celtique.png"></button>    
+      </div>
+      <div class="display_pantheon">
+                                                          <!-- Panthéon Grec -->
+      <div class="hide" id="display_greek">
+        <img src="ressource img\file.png" class="logopantheon">
+          <span class="display_txt" class="txt" >
+            La mythologie greque est remplie de divinité, <br>
+            de héros, de monstres et de légendes. <br>
+            Parmi toutes ces entités, <br>
+             12 sont particulièrement mis en avant : les Olympiens .<br>
+            Ils vivent sur le mont Olympe et assistent Zeus dans la gouvernance du monde.<br>
+            Chacun d'eux joue un rôle crucial dans les récits de cette mythologie<br>
+          </span>
+        
+        <button type="button" id="nextpagegrec">Découvrir les divinités </button>
+      </div>
 
-      <button type ="button" class="boutonp3" id="buttongreek" ><img src="ressource img\grec.jpg"></button>
-      <button type ="button" class="boutonp3" id="buttonnorse" ><img src="ressource img\nordique.png"></button> 
-      <button type ="button" class="boutonp3" id="buttonegyptian"><img src="ressource img\égyptien.png"></button> 
-      <button type ="button" class="boutonp3" id="buttonhindu" ><img src="ressource img\hindu.png"></button> 
-      <button type ="button" class="boutonp3" id="buttonchinois" ><img src="ressource img\chinois.png"></button>
-      <button type ="button" class="boutonp3" id="buttonjapan" ><img src="ressource img\japonais.png"></button> 
-      <button type ="button" class="boutonp3" id="buttonarthurian" ><img src="ressource img\arthurien.png"></button>
-      <button type ="button" class="boutonp3" id="buttonmayan" ><img src="ressource img\maya.png"></button>
-      <button type ="button" class="boutonp3" id="buttonceltic" ><img src="ressource img\celtique.png"></button>    
+      <div class="hide" id="display_norse">
+        <span class="display_txt" class="txt">
+        Glagla il fait froid dans le nord 
+        </span>
+      </div>
+      </div>
 
     </div>
   </section>
