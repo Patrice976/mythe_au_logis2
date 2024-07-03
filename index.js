@@ -30,43 +30,29 @@ const ButtonToDisplay = {
     'buttonceltic' : 'display_celtic',
 }
 let buttons = document.querySelectorAll('#boutonpantheon button')
+let display_pantheon = document.querySelectorAll('.display_pantheon section')
 console.log(buttons)
 
-for (let index = 0; index < buttons.length; index++) {
+for (let index = 0; index < buttons.length; index++) { //On va parcourir l'enssemble des boutons 
     const element = buttons[index];
-    element.addEventListener ('click', function() {
-        alert('coucou')
+    element.addEventListener ('click', function() { //On va attaché au boutton cliqué un eventListener 
+
+            for (let i = 0; i < display_pantheon.length; i++) {  //boucle pour cacher toute les éléments display
+                const screen = display_pantheon[i]; //On parcours l'enssemble des éléments du display panthéon 
+                screen.classList.add('hide') // On va cacher ces éléments 
+            }
          // ON doit recuperer l'id du bouton clické
         let id = this.getAttribute('id')
         // EN utilisant ton objet ButtonToDIsplay, recuperer l'id correspondant de la div
         let display = ButtonToDisplay[id]
         // Selectionner la div grace a son id
         let target_div = document.getElementById(display)
-        console.log(target_div)
         // Afficher la div
         target_div.classList.remove('hide')
-
     })
 }
 
-// let buttongreek = document.getElementById('buttongreek')
-// let visible=false
 
-
-// buttongreek.addEventListener ('click', function() {
-
-//     const div = document.getElementById('display_greek')
-
-//     if (visible==false) {
-//         div.classList.remove('hide') ;
-//         visible=true
- 
-//     } else { 
-//     div.classList.add('hide')
-//     visible = false
-//     }
-   
-// })
 
 
 
