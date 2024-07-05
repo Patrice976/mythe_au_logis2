@@ -17,7 +17,6 @@ window.addEventListener('scroll', function() {
 })
 
 // Bonton panthéon affichage de contenu au clic  //
-
 const ButtonToDisplay = {
     'buttongreek' : 'display_greek',
     'buttonnorse' : 'display_norse',
@@ -51,6 +50,7 @@ for (let index = 0; index < buttons.length; index++) { //On va parcourir l'ensse
         target_div.classList.remove('hide')
     })
 }
+
 
 
 

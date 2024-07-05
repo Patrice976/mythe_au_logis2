@@ -95,7 +95,7 @@ body {
             align-items: center;
             height : 15vh;  
             margin-top : 10% ; 
-            margin-left : 13%; /* forcer le centrage car le display le semble pas fonctionner */ 
+            margin-left : 15%; /* forcer le centrage car le display le semble pas fonctionner */ 
                 
 
                 }
@@ -134,34 +134,67 @@ body {
         .logopantheon {
             position : absolute ; 
             right : 58%; 
-            bottom : 10%
+            bottom : 10% ; 
+            top : 250%;
             width : auto ; 
-            height : 60% ;
+            height : 40% ;
 
         }
     
         .display_txt {
            position : absolute ; 
-           right :0.75% ; 
+           right :-8% ; 
            white-space: nowrap;
         }
 
-        #nextpagegrec { 
+        .nextpagebtn {
             position : relative ; 
-            top : 90% ;
-            right : 200%;
+            right : 150%;
             height : 20% ;
-            width: 150% ;  
-            background-color: #A050CB;
-            color : white ; 
+            width: 150% ; 
+            margin-top: 130%; 
             border-radius: 0.5em;
             font-size: 1.5em;
-            transition : box-shadow 0.5s ; 
+            transition : box-shadow 0.5s ;  
         }
 
-        #nextpagegrec:hover {
+        .nextpagebtn:hover {
             box-shadow: 0 0 15px #fff;
         }
+
+            #nextpagegrec { 
+                background-color: #A050CB;
+                color : white ; 
+                
+            }
+            #nextpagenorse {
+                background-color: #0C7DC1;
+                color : black
+            }
+            #nextpageegyptian {
+                background-color: #EEB33F;
+                color : black;
+            }
+            #nextpagehindu {
+                background-color: #F82D99;
+                color: black;
+            }
+            #nextpagechinois {
+                background-color: #F44236;
+                color: black;
+            }
+            #nextpagejapan {
+                background-color: #B80103;
+                color: white;
+            }
+            #nextpagearthurian {
+                background-color: #970908;
+                color: black;
+            }
+            #nextpagemaya {
+                
+            }
+       
 
        
 
