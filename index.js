@@ -8,11 +8,11 @@ window.addEventListener('scroll', function() {
 
        if (window.scrollY > 0) {
         header.classList.add('Reduce');
-        logo.src= 'ressource img/logo image - blanc.png'
+        logo.src= 'ressourceimg/logo image - blanc.png'
 
     } else {
         header.classList.remove('Reduce');
-        logo.src= 'ressource img/Logo ligne - blanc.png'
+        logo.src= 'ressourceimg/Logo ligne - blanc.png'
     }
 })
 
