@@ -53,12 +53,11 @@ header a:hover {
 body {
     background-color: rgb(1, 1, 49);
     scroll-behavior: smooth;
-    cursor : url("ressourceimg\maya_file.png"), auto ;
  
 }
 
 
-    #indexp1{
+    #index_p1{
        
 
     }
@@ -66,38 +65,38 @@ body {
         #logo{
             width : 90%;
             height : auto ; 
-            transition : width 3s, transform 3s, opacity 3s;  
+            transition : width 3s, transform 3s ;
             padding : 7em 6em 0 0; 
             
         }
     
 
-    #indexp2{
+    #index_p2{
        height: calc(100vh - 90px) 
        
 
     }
 
-        #para1{
+        #para_1{
             align-self:flex-start;
         }
-        #para2 {
+        #para_2 {
             align-self: center;
         
         }
-        #para3{
+        #para_3{
             align-self:flex-end;
 
         }
         
     
-    #indexp3{
+    #index_p3{
     display : flex ;
     flex-direction: column; 
     margin : 0 ;
     }
 
-        #boutonpantheon {
+        #bouton_pantheon {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -107,7 +106,7 @@ body {
                 
 
                 }
-                .boutonp3 {
+                .bouton_p3 {
                     background-color: transparent;
                     border-radius : 50%;
                     overflow: hidden; /*empêche l'image de déborder du bouton*/
@@ -119,14 +118,14 @@ body {
                     
                 }
 
-                .boutonp3 img {
+                .bouton_p3 img {
                     width: 100%;
                     height : 100%;
                     object-fit : cover; /* permet d'adapter l'image pour qu'elle fit avec le bouton */
                     border-radius: 50% /* petit tips pour que l'image sois aussi ronde que le bouton */
                 }
                 
-                .boutonp3:hover {
+                .bouton_p3:hover {
                     box-shadow : 0 0 20px #fff;
                     transform: scale(1.2);   
                 }
@@ -148,7 +147,7 @@ body {
             margin-top : 5em ; 
         }
 
-            .logopantheon {
+            .logo_pantheon {
             
             }
     
@@ -161,7 +160,7 @@ body {
            transition: opacity 2s; 
         }
 
-            .nextpagebtn {
+            .next_page_btn {
                 width: 15em;
                 margin-top: 2em;
                 border-radius: 0.5em;
@@ -171,45 +170,45 @@ body {
                 margin-bottom :  
             }
 
-            .nextpagebtn:hover {
+            .next_page_btn:hover {
                 box-shadow: 0 0 15px #fff;
             }
 
-                #nextpagegrec { 
+                #next_page_grec { 
                     background-color: #A050CB;
                     color : white ; 
                     
                 }
-                #nextpagenorse {
+                #next_page_norse {
                     background-color: #0C7DC1;
                     color : black
                 }
-                #nextpageegyptian {
+                #next_page_egyptian {
                     background-color: #EEB33F;
                     color : black;
                 }
-                #nextpagehindu {
+                #next_page_hindu {
                     background-color: #F82D99;
                     color: black;
                 }
-                #nextpagechinois {
+                #next_page_chinois {
                     background-color: #F44236;
                     color: black;
                 }
-                #nextpagejapan {
+                #next_page_japan {
                     background-color: #B80103;
                     color: white;
                 }
-                #nextpagearthurian {
+                #next_page_arthurian {
                     background-color: #970908;
                     color: black;
                 }
-                #nextpagemaya {
+                #next_page_maya {
                     background-color: #08A860;
                     color : black;
                     
                 }
-                #nextpageceltique {
+                #next_page_celtique {
                     background-color: #00572A;
                     color:white;
 
