@@ -30,7 +30,7 @@ const ButtonToDisplay = {
 }
 let BoutonPantheon = document.querySelectorAll('#bouton_pantheon button')
 let DisplayPantheon = document.querySelectorAll('.display_pantheon section')
-console.log(buttons)
+
 
 for (let index = 0; index < BoutonPantheon.length; index++) { //On va parcourir l'enssemble des boutons 
     const element = BoutonPantheon[index];
