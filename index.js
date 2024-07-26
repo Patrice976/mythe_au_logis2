@@ -30,7 +30,7 @@ const ButtonToDisplay = {
 }
 let BoutonPantheon = document.querySelectorAll('#bouton_pantheon button')
 let DisplayPantheon = document.querySelectorAll('.display_pantheon section')
-
+let displayStatus = false 
 
 for (let index = 0; index < BoutonPantheon.length; index++) { //On va parcourir l'enssemble des boutons 
     const element = BoutonPantheon[index];
@@ -49,10 +49,21 @@ for (let index = 0; index < BoutonPantheon.length; index++) { //On va parcourir 
         // Afficher la div
         TargetDiv.classList.remove('hide')
     })
+    displayStatus=true 
 }
 
+window.addEventListener('click', function() {
+
+    if(displayStatus==true) {
+
+    for (let i = 0; i < DisplayPantheon.length; i++) {  //boucle pour cacher toute les éléments display
+        const ButtonContent = DisplayPantheon[i]; //On parcours l'enssemble des éléments du display panthéon 
+        ButtonContent.classList.add('hide') // On va cacher ces élément
+    } 
+    }
+displayStatus = false 
+})
 
 
 
-
-
+console.log(displayStatus)

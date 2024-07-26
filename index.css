@@ -1,4 +1,7 @@
-
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .txt{
     color: beige;
@@ -51,8 +54,9 @@ header a:hover {
 
 
 body {
-    background-color: rgb(1, 1, 49);
+    background-color: rgb(5, 2, 40);
     scroll-behavior: smooth;
+    overflow-x: hidden;
  
 }
 
@@ -72,8 +76,8 @@ body {
     
 
     #index_p2{
-       height: calc(100vh - 90px) 
-       
+       height: calc(100vh - 90px); 
+       background : linear-gradient(rgb(5, 2, 40),rgb(5, 3, 65));
 
     }
 
@@ -94,6 +98,7 @@ body {
     display : flex ;
     flex-direction: column; 
     margin : 0 ;
+    background : linear-gradient(rgb(2, 2, 65),rgb(3, 3, 81))
     }
 
         #bouton_pantheon {
@@ -248,3 +253,10 @@ body {
             display : none ;
             opacity : 0 ; 
         }
+
+
+
+
+       
+
+       

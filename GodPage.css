@@ -1,0 +1,41 @@
+.intro {
+    text-align: center ;
+}
+
+.intro h1 {
+    font-weight: bold;
+    padding : 1em ;
+}
+
+.intro p {
+    padding : 1em ;
+}
+
+.god_list {
+    display : grid ;
+    grid-template-columns: repeat(12,8fr);    
+}
+
+img {
+    display: flex;
+    justify-content : center ; 
+    object-fit : contain;
+    
+    
+}
+
+.container {
+    opacity :100% ;
+    width: 18vh ;
+    height : 80vh;
+    box-shadow: #fff 0em 0em 0em ;
+    transition : z-index 2s, width 2s, box-shadow 5s ;
+}
+
+.container:hover { 
+        z-index: 100;
+        width :100%;
+        box-shadow: #fff 1em 0.25em 1em ;
+        transform: translateY(-2rem);
+        
+    }
