@@ -19,23 +19,29 @@
 img {
     display: flex;
     justify-content : center ; 
-    object-fit : contain;
-    
+    object-fit : contain;    
     
 }
 
 .container {
+    display: flex ;
     opacity :100% ;
     width: 18vh ;
     height : 80vh;
     box-shadow: #fff 0em 0em 0em ;
-    transition : z-index 2s, width 2s, box-shadow 5s ;
+    transition : box-shadow 2s transform 0.6s 
 }
 
 .container:hover { 
-        z-index: 100;
-        width :100%;
-        box-shadow: #fff 1em 0.25em 1em ;
-        transform: translateY(-2rem);
-        
-    }
+         z-index: 100; 
+        box-shadow: #fff 1em 1em 1em 1em ;
+        animation :0.6s linear forwards slidein  ;
+        transform: scale(1.1) ; 
+    
+}
+
+
+    @keyframes slidein {
+        from { width : 18vh }
+        to   { width: 80vh; }
+      } 
