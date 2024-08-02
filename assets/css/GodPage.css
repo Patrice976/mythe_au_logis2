@@ -1,3 +1,4 @@
+
 .intro {
     text-align: center ;
 }
@@ -13,14 +14,14 @@
 
 .god_list {
     display : grid ;
-    grid-template-columns: repeat(12,8fr);    
+    grid-template-columns: repeat(12,8fr);
 }
 
 img {
     display: flex;
-    justify-content : center ; 
-    object-fit : contain;    
-    
+    justify-content : center ;
+    object-fit : contain;
+
 }
 
 .container {
@@ -28,31 +29,30 @@ img {
     opacity :100% ;
     width: 18vh ;
     height : 80vh;
-    
+
 }
 
-.container:hover { 
-         z-index: 100; 
+.container:hover {
+         z-index: 100;
         animation :0.8s ease-out forwards slidein ;
-           
-        transform: scale(1.1) ; 
-    
+
+        transform: scale(1.1) ;
+
 }
 
 .container img:hover {
     transition-delay: 2s;
-    transition-property : animation ; 
-    animation : 0.6s ease-in-out forwards boxShadow;   
+    transition-property : animation ;
+    animation : 0.6s ease-in-out forwards boxShadow;
 }
     @keyframes slidein {
         from { width : 18vh }
         to   { width: 80vh; }
-      } 
-    
+      }
+
       @keyframes boxShadow {
         from {box-shadow:  0px 0px 3px 3px #FDFDFF}
         to {box-shadow : 0px 2px 11px 15px #FDFDFF}
       }
 
 /* Appliquer un translate différent pour les 4 dernière images  */
-   
