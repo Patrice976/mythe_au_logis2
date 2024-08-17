@@ -69,7 +69,6 @@ body {
 
 #index_p2 {
     height: calc(100vh - 90px);
-    /* background: linear-gradient(var(--main-color), rgb(5, 3, 65)); */
 }
 
 #para_1 {
@@ -90,7 +89,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    /* background: linear-gradient(rgb(2, 2, 65), rgb(3, 3, 81)) */
 }
 
 #bouton_pantheon {
@@ -123,7 +121,7 @@ body {
 }
 
 .bouton_p3:hover {
-    box-shadow: 0 0 20px #fff;
+    box-shadow: 0 0 20px var(--light-color);
     transform: scale(1.2);
 }
 
@@ -131,7 +129,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100 %
+    width: 100% ; 
 }
 
 /* mise en page Menu Grec */
@@ -164,62 +162,55 @@ body {
 }
 
 .next_page_btn:hover {
-    box-shadow: 0 0 15px #fff;
+    box-shadow: 0 0 15px var(--light-color);
 }
 
 #next_page_grec {
-    background-color: #A050CB;
-    color: white;
+    background-color: var(--greek-color);
 
 }
 
 #next_page_norse {
-    background-color: #0C7DC1;
-    color: black
+    background-color: var(--norse-color);
+    
 }
 
 #next_page_egyptian {
-    background-color: #EEB33F;
-    color: black;
+    background-color: var(--egyptian-color);
+
 }
 
 #next_page_hindu {
-    background-color: #F82D99;
-    color: black;
+    background-color: var(--hindu-color);
 }
 
 #next_page_chinois {
-    background-color: #F44236;
-    color: black;
+    background-color: var(--chinois-color);
 }
 
 #next_page_japan {
-    background-color: #B80103;
-    color: white;
+    background-color: var(--japan-color);
 }
 
 #next_page_arthurian {
-    background-color: #970908;
-    color: black;
+    background-color: var(--arthurian-color);
 }
 
 #next_page_maya {
-    background-color: #08A860;
-    color: black;
-
+    background-color: var(--mayan-color);
 }
 
 #next_page_celtique {
-    background-color: #00572A;
-    color: white;
+    background-color: var(--celtic-color);
 }
 
 /* condition qui se rajoute au header si scroll */
 .Reduce {
     height: 60px;
     padding: 10px 0;
-    background: linear-gradient(142deg, rgba(2, 0, 36, 1) 25%, rgba(32, 32, 95, 1) 80%, rgba(152, 165, 168, 1) 100%);
-    box-shadow: 0 0 25px #fff;
+    /* background: linear-gradient(142deg, rgba(2, 0, 36, 1) 25%, rgba(32, 32, 95, 1) 80%, rgba(152, 165, 168, 1) 100%); */
+    background: linear-gradient(142deg, var(--background-color) 25%, var(--light-backgroundcolor) 80%, var(--light-color) 100%);
+    box-shadow: 0 0 25px var(--light-color);
     transition-delay: 1s;
     transition-property: box-shadow;
 }
@@ -233,7 +224,7 @@ body {
 
 .Reduce #logo:hover {
     transform: scale(1.2);
-    text-shadow: #fff 1em 0.25em 1em;
+    text-shadow: var(--light-color) 1em 0.25em 1em;
 }
 
 /* cache les éléments pour l'utilisation */

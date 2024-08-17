@@ -5,13 +5,13 @@
 
 
     /* PantheonTheme */
-    --purple-color: var(#A050CB);
-    --blue-color: var(#0C7DC1);
-    --orange-color: var(#EEB33F);
-    --pink-color: var(#F82D99);
-    --red-color: var(#F44236);
-    --dark-red-color-a: var(#B80103);
-    --dark-red-color-b: var(#970908);
-    --green-color: var(#08A860);
-    --dark-green-color: var(#00572A);
+    --greek-color: #A050CB;
+    --norse-color: #0C7DC1;
+    --egyptian-color: #EEB33F;
+    --hindu-color: #F82D99;
+    --chinois-color: #F44236;
+    --japan-color: #B80103;
+    --arthurian-color: #970908;
+    --mayan-color: #08A860;
+    --celtic-color: #00572A;
 }
