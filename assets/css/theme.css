@@ -1,12 +1,10 @@
 :root {
-    --main-color: var(#6e5394);
-    --secondary-color: var(#6e5394);
-    --accent-color: var(#6e5394);
-    --dark-color: var(#222);
-    --light-color: var(#f5f5dc);
+    --background-color: rgb(3, 1, 20);
+    --light-backgroundcolor : rgb(12, 9, 99);
+    --light-color: #f5f5dc;
 
 
-    /* WebsiteTheme */
+    /* PantheonTheme */
     --purple-color: var(#A050CB);
     --blue-color: var(#0C7DC1);
     --orange-color: var(#EEB33F);

@@ -1,5 +1,3 @@
-
-
 .cieletoile {
     position : relative ; 
     width : 100%;
@@ -23,40 +21,40 @@ body .star {
 
 body .star.star1 {
     animation-delay :0s ; 
-    background: url('ressourceimg/star1.png');
+    background: url('/assets/ressourceimg/star1.png');
     
 }
 body .star.star2 {
     animation-delay :-1s ; 
-    background: url('ressourceimg/star2.png');
+    background: url('/assets/ressourceimg/star2.png');
     
 }
 body .star.star3 {
     animation-delay :-2s ; 
-    background: url('ressourceimg/star3.png');
+    background: url('/assets/ressourceimg/star3.png');
     
 }
 body .star.star4 {
     animation-delay :-3s ; 
-    background: url('ressourceimg/star4.png');
+    background: url('/assets/ressourceimg/star4.png');
     
 }
 body .star.star5 {
     animation-delay :-4s ; 
-    background: url('ressourceimg/star5.png');
+    background: url('/assets/ressourceimg/star5.png');
     
 }
 body .star.star6 {
     animation-delay :-5s ; 
-    background: url('ressourceimg/star6.png');
+    background: url('/assets/ressourceimg/star6.png');
     
 }body .star.star7 {
     animation-delay :-6s ; 
-    background: url('ressourceimg/star7.png');
+    background: url('/assets/ressourceimg/star7.png');
     
 }body .star.star8 {
     animation-delay :-7s ; 
-    background: url('ressourceimg/star8.png');
+    background: url('/assets/ressourceimg/star8.png');
     
 }
 @keyframes animate 
