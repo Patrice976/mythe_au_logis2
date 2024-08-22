@@ -41,19 +41,18 @@ header a {
 
 header a:hover {
     transform: scale(1.2);
-    transition-delay (text-shadow: #fff 1em 0.25em 1em): 1s;
+    transition-delay (text-shadow: var(--light-color) 1em 0.25em 1em): 1s;
 }
 
 
 .container {
     height: 100vh;
-    /* vh= viewport height 1vh = 1% de la hauteur de la fenêtre du navigateur ... 100vh permet d'occuper toute la hauteru de la fenêtre du navigateur */
+    /* vh= viewport height 1vh = 1% de la hauteur de la fenêtre du navigateur ... 100vh permet d'occuper toute la hauteur de la fenêtre du navigateur */
     display: flex;
 }
 
 
 body {
-    /* background-color: var(--main-color); */
     background: linear-gradient(var(--background-color), var(--light-backgroundcolor));
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -184,8 +183,8 @@ body {
     background-color: var(--hindu-color);
 }
 
-#next_page_chinois {
-    background-color: var(--chinois-color);
+#next_page_chinese {
+    background-color: var(--chinese-color);
 }
 
 #next_page_japan {
