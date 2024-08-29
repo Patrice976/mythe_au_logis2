@@ -1,18 +1,16 @@
 :root {
-    --background-color: rgb(3, 1, 20);
-    --light-backgroundcolor : rgb(12, 9, 99);
-    --light-color: #f5f5dc;
+  --background-color: rgb(3, 1, 20);
+  --light-backgroundcolor: rgb(12, 9, 99);
+  --light-color: #f5f5dc;
 
-
-
-    /* PantheonTheme */
-    --greek-color: #A050CB;
-    --norse-color: #0C7DC1;
-    --egyptian-color: #EEB33F;
-    --hindu-color: #F82D99;
-    --chinese-color: #F44236;
-    --japan-color: #B80103;
-    --arthurian-color: #970908;
-    --mayan-color: #08A860;
-    --celtic-color: #00572A;
+  /* PantheonTheme */
+  --greek-color: #a050cb;
+  --norse-color: #0c7dc1;
+  --egyptian-color: #eeb33f;
+  --hindu-color: #f82d99;
+  --chinese-color: #f44236;
+  --japan-color: #b80103;
+  --arthurian-color: #970908;
+  --mayan-color: #08a860;
+  --celtic-color: #00572a;
 }

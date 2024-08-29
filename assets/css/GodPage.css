@@ -1,58 +1,80 @@
-
 .intro {
-    text-align: center ;
+  text-align: center;
 }
 
 .intro h1 {
-    font-weight: bold;
-    padding : 1em ;
+  font-weight: bold;
+  padding: 1em;
 }
 
 .intro p {
-    padding : 1em ;
+  padding: 1em;
 }
 
 .god_list {
-    display : grid ;
-    grid-template-columns: repeat(12,8fr);
+  display: flex;
+  width: 100dvw;
 }
 
 img {
-    display: flex;
-    justify-content : center ;
-    object-fit : contain;
-
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
 }
 
 .container {
-    display: flex ;
-    opacity :100% ;
-    width: 18vh ;
-    height : 80vh;
-
+  display: flex;
+  opacity: 100%;
+  width: 100%;
+  flex: 1;
+  transition: width 2s ease-in-out;a
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .container:hover {
-         z-index: 100;
-        animation :0.8s ease-out forwards slidein ;
+  z-index: 100;
+  width: 100%;
+  animation: 1s ease-in-out forwards flexgrow;
+  clip-path: none;
+}
 
-        transform: scale(1.1) ;
-
+.container:not(:hover) {
+    animation: 1s ease-in-out forwards flexfall;a
 }
 
 .container img:hover {
-    transition-delay: 2s;
-    transition-property : animation ;
-    animation : 0.6s ease-in-out forwards boxShadow;
+  transition-delay: 2s;
+  transition-property: animation;
+  animation: 0.6s ease-in-out forwards boxShadow;
 }
-    @keyframes slidein {
-        from { width : 18vh }
-        to   { width: 80vh; }
-      }
 
-      @keyframes boxShadow {
-        from {box-shadow:  0px 0px 3px 3px #FDFDFF}
-        to {box-shadow : 0px 2px 11px 15px #FDFDFF}
-      }
+
+@keyframes flexgrow {
+    from {
+        flex: 1;
+    }
+    to {
+        flex : 12;
+    }
+}
+
+@keyframes flexfall {
+    from {
+        flex: 12;
+    }
+    to {
+        flex: 1;
+    }
+}
+
+@keyframes boxShadow {
+  from {
+    box-shadow: 0px 0px 3px 3px #fdfdff;
+  }
+  to {
+    box-shadow: 0px 2px 11px 15px #fdfdff;
+  }
+}
 
 /* Appliquer un translate différent pour les 4 dernière images  */
