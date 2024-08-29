@@ -28,7 +28,7 @@ img {
   opacity: 100%;
   width: 100%;
   flex: 1;
-  transition: width 2s ease-in-out;a
+  transition: width 2s ease-in-out;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
@@ -40,7 +40,7 @@ img {
 }
 
 .container:not(:hover) {
-    animation: 1s ease-in-out forwards flexfall;a
+    animation: 0.8s ease-in-out forwards flexfall;
 }
 
 .container img:hover {
