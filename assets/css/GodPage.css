@@ -28,24 +28,24 @@ img {
   opacity: 100%;
   width: 100%;
   flex: 1;
-  transition: width 2s ease-in-out;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .container:hover {
-  z-index: 100;
   width: 100%;
+  animation-delay : 1s ;
   animation: 1s ease-in-out forwards flexgrow;
   clip-path: none;
 }
 
 .container:not(:hover) {
-    animation: 0.8s ease-in-out forwards flexfall;
+  animation-delay: 1s;
+  animation: 0.8s ease-in-out forwards flexfall;
+   
 }
 
 .container img:hover {
-  transition-delay: 2s;
-  transition-property: animation;
+  animation-delay : 1s;
   animation: 0.6s ease-in-out forwards boxShadow;
 }
 
@@ -53,18 +53,23 @@ img {
 @keyframes flexgrow {
     from {
         flex: 1;
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     }
     to {
         flex : 12;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
 
 @keyframes flexfall {
     from {
         flex: 12;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     to {
         flex: 1;
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
     }
 }
 
@@ -77,4 +82,3 @@ img {
   }
 }
 
-/* Appliquer un translate différent pour les 4 dernière images  */
