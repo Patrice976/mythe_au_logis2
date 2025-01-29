@@ -11,6 +11,7 @@
   padding: 1em;
 }
 
+
 .god_list {
   display: flex;
   width: 100dvw;
@@ -39,13 +40,11 @@ img {
 }
 
 .container:not(:hover) {
-  animation-delay: 1s;
   animation: 0.8s ease-in-out forwards flexfall;
    
 }
 
 .container img:hover {
-  animation-delay : 1s;
   animation: 0.6s ease-in-out forwards boxShadow;
 }
 
@@ -81,4 +80,8 @@ img {
     box-shadow: 0px 2px 11px 15px #fdfdff;
   }
 }
+
+
+/* mission : transformation des .container:hover en classe à rajouter en js sur l'élément container 
+désactiver les mousehover tant qu'une animation est en cours  */
 

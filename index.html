@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <script src="./assets/js/index.js" defer></script>
   <title>Mythe au logis</title>
 </head>
@@ -45,25 +48,25 @@
     <div id="index_p2" class="container">
       <!-- incorporé un background avec des flammes animés (a minima) dans l'iéale colonnes grec + flamme -->
 
-      <span id="para_1" class="txt">
+      <p id="para_1">
         Prêt à plonger dans des récits épiques et des aventures légendaires ?
           <br>
           <br>
           <br>
           <br>
-      </span>
+      </p>
 
-      <span id="para_2" class="txt">
+      <p id="para_2">
          Sur ce site, découvre des mythologies du monde entier.
          <br>
          <br>
          <br>
          <br>
-      </span>
+      </p>
 
-      <span id="para_3" class="txt">
+      <p id="para_3">
         Que tu sois fan de dieux norique, de héros grec ou de créatures mystérieuses<br/>,ici, il y a de quoi éveiller ton imagination !
-      </span>
+      </p>
 
   </section>
 
@@ -73,15 +76,42 @@
 
       <!-- bouton a placer tout en haut de la page avec présentation et détail du pantheon sur un hoove -->
       <div id="bouton_pantheon">
+        <div id = greek_button_title>
         <button type ="button" class="bouton_p3" id="button_greek" aria-label="Clique pour Découvrir la mythologie grec" ><img src="./assets/ressourceimg\grec.jpg" alt="logo mythologie grec"></button>
-        <button type ="button" class="bouton_p3" id="button_norse" aria-label="Clique pour Découvrir la mythologie nordique"><img src="./assets/ressourceimg\nordique.png" alt="logo mythologie nordique"></button>
+        <p>Panthéon Grec</p>
+        </div>
+        <div id = norse_button_title>
+          <button type ="button" class="bouton_p3" id="button_norse" aria-label="Clique pour Découvrir la mythologie nordique"><img src="./assets/ressourceimg\nordique.png" alt="logo mythologie nordique"></button>
+          <p>Panthéon Nordique</p>
+        </div>
+        <div id = egyptian_button_title>
         <button type ="button" class="bouton_p3" id="button_egyptian" aria-label="Clique pour Découvrir la mythologie égyptienne"><img src="./assets/ressourceimg\égyptien.png" alt="logo mythologie égyptien"></button>
-        <button type ="button" class="bouton_p3" id="button_hindu" aria-label="Clique pour Découvrir la mythologie indienne" ><img src="./assets/ressourceimg\hindu.png" alt="logo mythologie hindu"></button>
-        <button type ="button" class="bouton_p3" id="button_chinois" aria-label="Clique pour Découvrir la mythologie chinoise" ><img src="./assets/ressourceimg\chinois.png" alt="logo mythologie chinoise"></button>
-        <button type ="button" class="bouton_p3" id="button_japan" aria-label="Clique pour Découvrir la mythologie japonaise"><img src="./assets/ressourceimg\japonais.png" alt="logo mythologie japonaise"></button>
-        <button type ="button" class="bouton_p3" id="button_arthurian" aria-label="Clique pour Découvrir la mythologie arthurienne" ><img src="./assets/ressourceimg\arthurien.png" alt="logo mythologie arthurien"></button>
-        <button type ="button" class="bouton_p3" id="button_mayan" aria-label="Clique pour Découvrir la mythologie maya"><img src="./assets/ressourceimg\maya.png" alt="logo mythologie maya"></button>
-        <button type ="button" class="bouton_p3" id="button_celtic" aria-label="Clique pour Découvrirla mythologie celtique"><img src="./assets/ressourceimg\celtique.png" alt="logo mythologie celtique"></button>
+        <p>Panthéon Egyptien</p>
+        </div>
+        <div id="hindu_button_title">
+          <button type ="button" class="bouton_p3" id="button_hindu" aria-label="Clique pour Découvrir la mythologie indienne" ><img src="./assets/ressourceimg\hindu.png" alt="logo mythologie hindu"></button>
+          <p>Panthéon Hindu</p>
+        </div>
+        <div id="chinese_button_title">
+          <button type ="button" class="bouton_p3" id="button_chinese" aria-label="Clique pour Découvrir la mythologie chinoise" ><img src="./assets/ressourceimg\chinois.png" alt="logo mythologie chinoise"></button>
+          <p>Panthéon Chinois</p>
+        </div>
+        <div id="japan_button_title">
+          <button type ="button" class="bouton_p3" id="button_japan" aria-label="Clique pour Découvrir la mythologie japonaise"><img src="./assets/ressourceimg\japonais.png" alt="logo mythologie japonaise"></button>
+          <p>Panthéon Japonais</p>
+        </div>
+        <div id="arthurian_button_title">
+          <button type ="button" class="bouton_p3" id="button_arthurian" aria-label="Clique pour Découvrir la mythologie arthurienne" ><img src="./assets/ressourceimg\arthurien.png" alt="logo mythologie arthurien"></button>
+          <p>Panthéon Arthurien</p>
+        </div>
+        <div id="mayan_button_title">
+          <button type ="button" class="bouton_p3" id="button_mayan" aria-label="Clique pour Découvrir la mythologie maya"><img src="./assets/ressourceimg\maya.png" alt="logo mythologie maya"></button>
+          <p>Panthéon Maya</p>
+        </div>
+        <div id="celtic_button_title">
+          <button type ="button" class="bouton_p3" id="button_celtic" aria-label="Clique pour Découvrirla mythologie celtique"><img src="./assets/ressourceimg\celtique.png" alt="logo mythologie celtique"></button>
+          <p>Panthéo Celtique </p>
+        </div>
       </div>
       <div class="display_pantheon">
                                                           <!-- Panthéon Grec -->
@@ -90,7 +120,7 @@
           <img src="./assets/ressourceimg\grec_file.png" class="logo_pantheon">
           </div>
             <div class="display_txt">
-              <p class="txt">
+              <p>
                 La mythologie greque est remplie de divinité,
                 de héros, de monstres et de légendes.
                 Parmi toutes ces entités,
@@ -109,7 +139,7 @@
             <img src="./assets/ressourceimg\nordique_file.png" class="logo_pantheon">
           </div>
           <div class="display_txt">
-            <p class="txt">
+            <p>
               La mythologie nordique regroupe deux grandes familles de divinités : les Ases et les Vanes.
               Les Ases résident à Asgard et sont liés au pouvoir, à la guerre et à la sagesse.
               Les Vanes, quant à eux, sont associés à la nature, la fertilité et la prospérité.
@@ -126,13 +156,13 @@
             <img src="./assets/ressourceimg\égyptien_file.png" class="logo_pantheon">
           </div>
           <div class="display_txt">
-            <span class="txt">
+            <p>
               La mythologie égyptienne regroupe de nombreuses divinités résidant dans des temples sacrés
               et jouant un rôle essentiel dans le maintien de l'ordre et de l'équilibre de l'univers.
               Les récits égyptiens se concentrent sur la création, la mort et la renaissance.
               On y retrouve des créatures mythiques telles que les sphinx,
               ajoutant une dimension fascinante à cet univers.
-            </span>
+            </p>
             <button type="button" class="next_page_btn" id="next_page_egyptian">Découvrir les divinités</button>
           </div>
         </section>
@@ -142,7 +172,7 @@
             <img src="./assets/ressourceimg\hindu_file.png" class="logo_pantheon">
           </div>
           <div class="display_txt">
-            <span class="txt">
+            <p>
               La mythologie hindoue est centrée autour de la Trimurti,
               composée des trois divinités principales : Brahma, Vishnu et Shiva,
               chacune jouant un rôle crucial dans le maintien de l'ordre cosmique.
@@ -150,24 +180,24 @@
               Les récits hindous sont peuplés de diverses créatures mythiques telles que
               les nagas (serpents divins), les garudas (oiseaux géants)
               et les kinnaras (êtres célestes mi-humains, mi-oiseaux).
-            </span>
+            </p>
             <button type="button" class="next_page_btn" id="next_page_hindu">Découvrir les divinités </button>
           </div>
         </section>
                                                         <!-- Panthéon Chinois -->
-        <section class="hide" id="display_chinois">
+        <section class="hide" id="display_chinese">
           <div class="display_img">
           <img src="./assets/ressourceimg\chinois_file.png" class="logo_pantheon">
           </div>
           <div class="display_txt">
-            <span class="txt">
+            <p>
               La mythologie chinoise s'appuie sur un dualisme qui oppose la lumière (le feu et le soleil)
               à l'obscurité (l'eau et la lune).
               Au centre de cette cosmologie se trouve l'Empereur de Jade,
               également connu sous le nom de Yu Huang Shangdi.
               Il règne sur le ciel et est vénéré comme le souverain suprême,
               jugeant les actions des mortels et distribuant récompenses et châtiments.
-            </span>
+            </p>
               <button type="button" class="next_page_btn" id="next_page_chinese">Découvrir les divinités </button>
             </div>
         </section>
@@ -177,7 +207,7 @@
             <img src="./assets/ressourceimg\japonais_file.png" class="logo_pantheon">
           </div>
           <div class="display_txt">
-            <span class="txt">
+            <p>
               La mythologie japonaise offre un univers captivant où divinités et esprits
               entrelacent leurs histoires avec celles des humains.
               Les kami, divinités de la nature, et les yokai, créatures surnaturelles,
@@ -185,7 +215,7 @@
               influençant les destinées et façonnant le monde des mortels.
               Ces légendes révèlent un monde où le sacré et le profane se rencontrent,
               offrant un regard unique sur la culture et les croyances du Japon ancien.
-            </span>
+            <p>
             <button type="button" class="next_page_btn" id="next_page_japan">Découvrir les divinités </button>
           </div>
         </section>
@@ -195,12 +225,12 @@
             <img src="./assets/ressourceimg\arthurien_file.png" class="logo_pantheon">
           </div>
           <div class="display_txt">
-            <span class="txt">
+            <p>
               La mythologie arthurienne,centrée autour du roi Arthur et de son épée légendaire Excalibur,
               met en lumière la quête du Saint Graal.
               Cette quête regorge d'épreuves héroïques et de défis spirituels
               auxquels Arthur et ses chevaliers de la Table Ronde vont être confrontés.
-            </span>
+            </p>
             <button type="button" class="next_page_btn" id="next_page_arthurian">Découvrir les divinités </button>
           </div>
         </section>
@@ -210,13 +240,13 @@
             <img src="./assets/ressourceimg\maya_file.png" class="logo_pantheon">
           </div>
           <div class="display_txt">
-            <span class="txt">
+            <p>
               La mythologie Maya, enracinée dans les civilisations de l'Amérique centrale,
               est une tradition spirituelle complexe et riche.
               Les Mayas croyaient que leurs dieux régissaient le temps,
               les récoltes et le destin individuel. Le Popol Vuh, texte sacré des Mayas Quichés,
               offre un aperçu précieux de leur cosmologie et de leur spiritualité profonde
-            </span>
+            </p>
             <button type="button" class="next_page_btn" id="next_page_maya">Découvrir les divinités </button>
           </div>
         </section>
@@ -226,14 +256,14 @@
             <img src="./assets/ressourceimg\celtique_file.png" class="logo_pantheon">
           </div>
           <div class="display_txt">
-            <span class="txt">
+            <p>
             La mythologie celtique, présente principalement en Europe occidentale,
             tourne autour d'une profonde connexion avec la nature.
             Les divinités celtes dirigent les cycles naturels, influençant les saisons,
             les récoltes et le destin des humains.
             Au sein de ces récits, on rencontre une variété de créatures mystiques telles que des fées,
             des lutins et des serpents-dragons.
-            </span>
+            </p>
             <button type="button" class="next_page_btn" id="next_page_celtique">Découvrir les divinités </button>
           </div>
         </section>

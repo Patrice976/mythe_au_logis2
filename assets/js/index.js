@@ -20,7 +20,7 @@ const ButtonToDisplay = {
   button_norse: "display_norse",
   button_egyptian: "display_egyptian",
   button_hindu: "display_hindu",
-  button_chinois: "display_chinois",
+  button_chinese: "display_chinese",
   button_japan: "display_japan",
   button_arthurian: "display_arthurian",
   button_mayan: "display_mayan",
@@ -33,7 +33,7 @@ let displayStatus = false;
 for (let index = 0; index < BoutonPantheon.length; index++) {
   //On va parcourir l'enssemble des boutons
   const element = BoutonPantheon[index];
-  element.addEventListener("click", function () {
+  element.addEventListener("mouseup", function () {
     //On va attaché au boutton cliqué un eventListener
 
     for (let i = 0; i < DisplayPantheon.length; i++) {
@@ -53,7 +53,7 @@ for (let index = 0; index < BoutonPantheon.length; index++) {
   displayStatus = true;
 }
 
-window.addEventListener("click", function () {
+window.addEventListener("mouseup", function () {
   if (displayStatus == true) {
     for (let i = 0; i < DisplayPantheon.length; i++) {
       //boucle pour cacher toute les éléments display
@@ -64,4 +64,39 @@ window.addEventListener("click", function () {
   displayStatus = false;
 });
 
-console.log(displayStatus);
+// Logique pour afficher le nom du pathéon au hover du bouton 
+
+//liste de toutes les div button/titre
+const button_title_to_show = 
+["greek_button_title",
+"norse_button_title",
+"egyptian_button_title",
+"hindu_button_title",
+"chinese_button_title",
+"japan_button_title",
+"arthurian_button_title",
+"mayan_button_title",
+"celtic_button_title"
+]
+
+
+
+
+for (let index = 0; index < button_title_to_show; index++) {
+  const title_to_show = array[index];
+  
+  //On cible dans le dom la div qui contient le bouton et son text
+let div = document.getElementById(array[index])
+//On cible la balise p dans la div greek_button_title
+title = div.querySelector("p");
+
+//on fait apparait le texte au hover
+div.addEventListener("mouseover", function() {
+  title.style.opacity = '1';
+})
+
+//on fait disparaitre le texte en sortie de hover 
+div.addEventListener("mouseout", function() {
+    title.style.opacity = "0";
+})
+}

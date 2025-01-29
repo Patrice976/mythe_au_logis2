@@ -1,14 +1,16 @@
+
 a {
     text-decoration: none;
     color: var(--light-color);
 }
 
-.txt {
-    color: var(--light-color);
-    font-family: "Cinzel", serif;
+p {
+    font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
-    font-style: normal;
+    font-weight: 415;
+    font-style: italic;
     align-items: center;
+    color : var(--light-color);
     font-size: 150%;
 }
 
@@ -61,7 +63,7 @@ body {
 #logo {
     width: 90%;
     height: auto;
-    transition: width 3s, transform 3s;
+    transition: width 1s, transform 1s;
     padding: 7em 6em 0 0;
 }
 
@@ -72,6 +74,7 @@ body {
 
 #para_1 {
     align-self: flex-start;
+    margin-left: 3%;
 }
 
 #para_2 {
@@ -91,11 +94,15 @@ body {
 }
 
 #bouton_pantheon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5em; /* Espacement entre les éléments */
+    justify-items: center;
+    width: 100%;
+    padding: 2em 0;
     height: 15vh;
     margin-top: 10%;
+    margin-left: 1%
 }
 
 .bouton_p3 {
@@ -169,39 +176,122 @@ body {
 
 }
 
+#greek_button_title {
+    display:flex;
+    flex-direction: column;
+}
+#greek_button_title p {
+    opacity : 0;
+    transition : opacity 1s;
+
+}
+
 #next_page_norse {
     background-color: var(--norse-color);
     
+}
+#norse_button_title {
+    display:flex;
+    flex-direction: column;
+}
+#norse_button_title p {
+    opacity : 0;
+    transition : opacity 1s;
+
 }
 
 #next_page_egyptian {
     background-color: var(--egyptian-color);
 
 }
+#egyptian_button_title {
+    display:flex;
+    flex-direction: column;
+}
+#egyptian_button_title p {
+    opacity : 0;
+    transition : opacity 1s;
+
+}
 
 #next_page_hindu {
     background-color: var(--hindu-color);
+}
+#hindu_button_title {
+    display:flex;
+    flex-direction: column;
+}
+#hindu_button_title p {
+    opacity : 0;
+    transition : opacity 1s;
+
 }
 
 #next_page_chinese {
     background-color: var(--chinese-color);
 }
+#chinese_button_title {
+    display:flex;
+    flex-direction: column;
+}
+#chinese_button_title p {
+    opacity : 0;
+    transition : opacity 1s;
+
+}
 
 #next_page_japan {
     background-color: var(--japan-color);
+}
+#japan_button_title {
+    display:flex;
+    flex-direction: column;
+}
+#japan_button_title p {
+    opacity : 0;
+    transition : opacity 1s;
+
 }
 
 #next_page_arthurian {
     background-color: var(--arthurian-color);
 }
+#arthurian_button_title {
+    display:flex;
+    flex-direction: column;
+}
+#arthurian_button_title p {
+    opacity : 0;
+    transition : opacity 1s;
+
+}
 
 #next_page_maya {
     background-color: var(--mayan-color);
+}
+#mayan_button_title {
+    display:flex;
+    flex-direction: column;
+}
+#mayan_button_title p {
+    opacity : 0;
+    transition : opacity 1s;
+
 }
 
 #next_page_celtique {
     background-color: var(--celtic-color);
 }
+#celtic_button_title {
+    display:flex;
+    flex-direction: column;
+}
+#celtic_button_title p {
+    opacity : 0;
+    transition : opacity 1s;
+
+}
+
 
 /* condition qui se rajoute au header si scroll */
 .Reduce {
