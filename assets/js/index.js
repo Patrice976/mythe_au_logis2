@@ -81,16 +81,11 @@ const button_title_to_show =
 
 
 
+button_title_to_show.forEach(id_div_to_show=> {
+  let div = document.getElementById(id_div_to_show)
+  let title = div.querySelector("p")
 
-for (let index = 0; index < button_title_to_show; index++) {
-  const title_to_show = array[index];
-  
-  //On cible dans le dom la div qui contient le bouton et son text
-let div = document.getElementById(array[index])
-//On cible la balise p dans la div greek_button_title
-title = div.querySelector("p");
-
-//on fait apparait le texte au hover
+  //on fait apparait le texte au hover
 div.addEventListener("mouseover", function() {
   title.style.opacity = '1';
 })
@@ -99,4 +94,16 @@ div.addEventListener("mouseover", function() {
 div.addEventListener("mouseout", function() {
     title.style.opacity = "0";
 })
-}
+})
+
+// for (let index = 0; index < button_title_to_show.length; index++) {
+//   const title_to_show = button_title_to_show [index];
+  
+//   //On cible dans le dom la div qui contient le bouton et son text
+// let div = document.getElementById(button_title_to_show [index])
+// //On cible la balise p dans la div greek_button_title
+// title = div.querySelector("p");
+
+// }
+
+
